@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,200&family=Open+Sans&family=PT+Serif:ital,wght@0,700;1,700&family=Roboto+Mono:ital,wght@1,600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+  font-family: 'Nerko One', cursive;
+  box-sizing: border-box;
+}
+body{
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+background-color: #eff0f4;
+}
+.container{
+    position: relative;
+    display: flex;
+justify-content: center;
+align-items: center;
+left: -85px;
+}
+.container .drop{
+position: relative;
+width: 393px;
+height: 422px;
+box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.08), 25px 35px 20px rgba(0,0,0,0.05), 25px 30px 30px rgba(0,0,0,0.05), inset -20px -20px 25px rgba(255,255,255,0.9);
+transition: 0.5s;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius:51% 49% 44% 56% / 52% 30% 70% 48% ;
+}
+.container .drop:hover{
+    border-radius: 50%;
+    
+}
+.container .drop::before{
+    content: '';
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    top: 50px;
+    left: 85px;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.9;
+}
+.container .drop::after{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 90px;
+    left: 110px;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.9;
+}
+.container .drop .content{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 40px;
+    gap: 15px;
+
+}
+.container .drop .content h3{
+position: relative;
+color: black;
+font-size: 1.5em;
+}
+
+.container .drop .content form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+   
+    justify-content: center;
+    align-items: center;
+}
+.container .drop .content form .inputBox{
+    position: relative;
+    width: 255px;
+   
+    box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.1),
+    inset -2px -5px 10px rgba(255, 255, 255, 1),
+    15px 15px 10px rgba(0,0,0,0.05), 15px 10px 15px rgba(0,0,0,0.025);
+
+border-radius: 25px;
+}
+.container .drop .content form .inputBox::before{
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 5px;
+    width: 65%;
+    background: rgba(255, 255, 255,0.5);
+    border-radius: 5px;
+
+
+}
+.container .drop .content form .inputBox input{
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+    font-size: 1em;
+    padding: 10px 15px;
+}
+.container .drop .content form .inputBox input[type="submit"]{
+    color: #eff0f4;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+}
+.container .drop .content form .inputBox:last-child{
+    box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.1),
+    inset -2px -5px 10px rgba(255, 255, 255, 1),
+    15px 15px 10px rgba(0,0,0,0.05), 15px 10px 15px rgba(0,0,0,0.025);
+    width: 120px;
+    transition: 0.5s;
+    background-color: rgb(34, 145, 218);
+}
+.container .drop .content form .inputBox:last-child:hover{
+    width: 150px;
+}
+.btns{
+    position: absolute;
+   
+    right: -219px;
+    bottom: 0;
+    width: 155px;
+    height: 119px;
+    background: rgb(227, 84, 208);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: #3c3c3e;
+    line-height: 1.2em;
+    letter-spacing: 0.1em;
+    font-size: 0.8em;
+    transition: 0.25s;
+    text-align: center;
+    color: #fff;
+    box-shadow: inset 10px 10px 10px rgba(190, 1, 254, 0.05) , 15px 25px 10px rgba(190, 1, 254, 0.1), 15px 20px 20px rgba(190, 1 ,254 , 0.1), inset -10px -10px 15px rgba(255, 255, 255, 0.5);
+    border-radius:34% 66% 65% 35% / 57% 58% 42% 43%  ;
+}
+.btns:hover{
+    border-radius: 50%;
+}
+.btns::before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    top: 15px;
+    left: 30px;
+    height: 20px;
+    border-radius: 50%;
+    background:#fff;
+    opacity: 0.45;
+}
+.btns.signup{
+    width: 95px;
+height: 84px;
+bottom: 200px;
+right: -135px;
+border-radius: 55% 45% 36% 64% / 38% 67% 33% 62%;
+background: rgb(244, 188, 20);
+box-shadow: inset 10px 10px 10px rgba(177, 147, 48, 0.58) , 15px 25px 10px rgba(239, 163, 18, 0.31), 15px 20px 20px rgba(183, 164, 109, 0.39), inset -10px -10px 15px rgba(255, 255, 255, 0.1);
+}
+.btns.signup:hover{
+    border-radius: 50%;
+}
+.btns.signup::before{
+    width: 15px;
+    height: 15px;
+    left: 20px;
+}
